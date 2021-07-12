@@ -13,9 +13,9 @@ A django web app to collect and track your waifus
   
 ## Tech Stack
 
-**Client:** Bootstrap, Django
+**Frontend:** Materialize CSS Framework
 
-**Server:** SQL, Django
+**Backend:** SQL, Django
 
 ## Badges
 
