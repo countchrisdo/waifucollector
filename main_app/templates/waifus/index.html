@@ -2,7 +2,16 @@
 {% block content %}
 
 <h1>Waifu List</h1>
+{% for waifu in waifus %}
+  <div class="card">
+    <a href="{% url 'detail' waifu.id %}">
+      <div class="card-content">
+        <span class="card-title">{{ waifu.name }}</span>
+        <p>Series: {{ waifu.series }}</p>
+        <p>Description: {{ waifu.description }}</p>
+      </div>
+    </a>
+  </div>
 
-<p>Come back to this</p>
-
+{% endfor %}
 {% endblock %}
