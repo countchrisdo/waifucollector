@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Waifu Details</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ waifu.name }}</span>
+    <p>Breed: {{ waifu.breed }}</p>
+    <p>Description: {{ waifu.description }}</p>
+  </div>
+  <div class="card-action">
+    <a href="{% url 'waifus_update' waifu.id %}">Edit</a>
+    <a href="{% url 'waifus_delete' waifu.id %}">Delete</a>
+  </div>
+</div>
+
+{% endblock %}

@@ -13,4 +13,20 @@ def about(request):
 
 def waifus_index(request):
   waifus = Waifu.objects.all()
-  return render(request, 'waifus/index.html', { 'waifus': waifus, })
+  return render(request, 'waifus/index.html', { 'waifus': waifus })
+
+def waifus_detail(request, waifu_id):
+  waifu = Waifu.objects.get(id=waifu_id)
+  return render(request, 'waifus/detail.html', { 'waifu': waifu })
+
+class WaifuCreate(CreateView):
+  model = Waifu
+  fields = '__all__'
+
+class WaifuUpdate(UpdateView):
+  model = Waifu
+  fields = '__all__'
+
+class WaifuDelete(DeleteView):
+  model = Waifu
+  success_url = '/waifus/'
