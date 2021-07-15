@@ -1,15 +1,13 @@
 
 # Waifu Collector
 
-A django web app to collect and track your waifus
+## A django web app to collect and track your waifus
 
 ![Logo](https://i.imgur.com/YgphPxj.png)
-
     
 ## Screenshots
 
-![App Screenshot](https://steamuserimages-a.akamaihd.net/ugc/1667986761566998000/9C1427B7D708553B3B04C9A6922653B6A45D20DA/?imw=506&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false)
-
+![](https://waifu.now.sh/sfw/random)
   
 ## Tech Stack
 
