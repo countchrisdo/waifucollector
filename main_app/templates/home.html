@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Home</h1>
+<h1>Welcome to the home page!</h1>
+<h2>Enjoy a random gif: <h2>
 
-<a href="{% url 'index'%}"><img src="https://waifu.vercel.app/sfw/random" alt="Homepage IMG" width="100%"> </a> 
+{% comment %} <a href="{% url 'index'%}"><img src="https://waifu.vercel.app/sfw/random" alt="Homepage IMG" width="100%"> </a>  {% endcomment %}
 
-<img src="http://i.imgur.com/4j5X2.jpg" alt="Homepage IMG" width="100%">
+<a href="{% url 'index'%}"><img src="https://waifu.vercel.app/sfw/wink" alt="Homepage IMG" width="100%"> </a> 
 
 {% endblock %}
