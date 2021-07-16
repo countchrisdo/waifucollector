@@ -48,3 +48,10 @@ class Cameo(models.Model):
     
     class Meta:
         ordering = ["title"]
+
+class Photo(models.Model):
+    url = models.CharField(max_length=200)
+    waifu = models.ForeignKey(Waifu, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"Photo for waifu_id: {self.waifu_id} @{self.url}"

@@ -19,4 +19,6 @@ urlpatterns = [
   path('accessories/create/', views.AccessoryCreate.as_view(), name='accessories_create'),
   path('accessories/<int:pk>/update/', views.AccessoryUpdate.as_view(), name='accessories_update'),
   path('accessories/<int:pk>/delete/', views.AccessoryDelete.as_view(), name='accessories_delete'),
+
+  path('waifus/<int:waifu_id>/add_photo/', views.add_photo, name='add_photo'),
 ]
