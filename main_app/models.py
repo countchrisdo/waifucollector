@@ -7,11 +7,23 @@ MEDIUMS = (
     ("A", "Anime")
 )
 
+# A non specific item (e.g. a book) a waifu could own
+class Accessory(models.Model):
+    name = models.CharField(max_length=50)
+    color = models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('accessories_detail', kwargs={'pk': self.id})
+
 # Create your models here.
 class Waifu(models.Model):
     name = models.CharField(max_length=100)
     series = models.CharField(max_length=100)
     description = models.TextField(max_length=250)
+    accessories = models.ManyToManyField(Accessory)
 
     def __str__(self):
         return f"{self.name}"
