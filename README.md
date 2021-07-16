@@ -7,15 +7,23 @@
 
 ![random gif](https://waifu.now.sh/sfw/wink)
 
+## Features
+
+- Upload a character
+- Add an image
+- Add any crossover events or cameos she has made recently
+- Create and share accessories between them!
+- View the site and look around to see others' waifus!
+
 ## Screenshots
 
-TBA
+TBD - The CSS isn't where I want it to be yet.
   
 ## Tech Stack
 
 **Frontend:** Materialize CSS Framework
 
-**Backend:** SQL, Django
+**Backend:** SQL, Django, AWS
 
 ## Badges
 
